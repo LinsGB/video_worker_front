@@ -82,7 +82,7 @@ export default function Home() {
         <h2 class="font-black text-xl">Original audio</h2>
         <div class='flex items-center'>
           <audio controls ref={originalAudioRef}> <source src={`${process.env.NEXT_PUBLIC_API_URL}original_audio`} type="audio/mpeg"/></audio>
-          <a href={`${process.env.NEXT_PUBLIC_API_URL}original_audio`} download="GFG">
+          <a href={`${process.env.NEXT_PUBLIC_API_URL}download/original_audio`} download="original_audio.mp3">
             <button class='ml-2 bg-white text-black'>Download</button>
           </a>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
         <h2 class="font-black text-xl">Translated audio</h2>
         <div class='flex items-center'>
           <audio controls ref={translatedAudioRef}> <source src={`${process.env.NEXT_PUBLIC_API_URL}translated_audio`} type="audio/mpeg"/></audio>
-          <a href={`${process.env.NEXT_PUBLIC_API_URL}translated_audio`} download="GFG">
+          <a href={`${process.env.NEXT_PUBLIC_API_URL}download/translated_audio`} download="transalted_audio.mp3">
             <button class='ml-2 bg-white text-black'>Download</button>
           </a>
         </div>
